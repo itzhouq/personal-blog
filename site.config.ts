@@ -31,16 +31,16 @@ export const site = {
   roadmap: [
     { text: "个人博客网站（本站）", done: true },
     { text: "每周一篇 build in public 记录", done: false },
-    { text: "第一个挂载的小工具（AI Chat 游乐场）", done: false },
+    { text: "第一个挂载的小工具（AI Chat 游乐场）", done: true },
     { text: "大模型 API 中转商店上线", done: false },
   ],
   /** /tools 页面卡片：后续挂自己的小工具、商店入口 */
   tools: [
     {
       title: "AI Chat 游乐场",
-      desc: "在线体验大模型对话，支持切换模型（基于自建 AI 网关）",
-      href: "",
-      badge: "开发中",
+      desc: "在线体验大模型对话：填入任意 OpenAI 兼容端点 + Key 即可，支持流式输出与多轮对话",
+      href: "/tools/chat",
+      badge: "可用",
     },
     {
       title: "大模型 API 中转商店",

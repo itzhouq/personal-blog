@@ -16,7 +16,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { tag: raw } = await params;
   const tag = decodeURIComponent(raw);
-  return { title: `#${tag}`, description: `标签「${tag}」下的全部文章` };
+  return {
+    title: `#${tag}`,
+    description: `标签「${tag}」下的全部文章`,
+    alternates: { canonical: `/tags/${encodeURIComponent(tag)}` },
+  };
 }
 
 export default async function TagPage({

@@ -6,6 +6,7 @@ import PostCard from "@/components/PostCard";
 export const metadata: Metadata = {
   title: "文章",
   description: "全部文章归档",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogIndex() {

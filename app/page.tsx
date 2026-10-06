@@ -1,7 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { site } from "@/site.config";
 import { getAllPosts, toMeta } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 function GitHubIcon() {
   return (

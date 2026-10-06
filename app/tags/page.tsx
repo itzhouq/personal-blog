@@ -5,6 +5,7 @@ import TagBadge from "@/components/TagBadge";
 export const metadata: Metadata = {
   title: "标签",
   description: "按标签浏览文章",
+  alternates: { canonical: "/tags" },
 };
 
 export default function TagsIndex() {

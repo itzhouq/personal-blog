@@ -6,6 +6,7 @@ import { renderMarkdown } from "@/lib/markdown";
 export const metadata: Metadata = {
   title: "关于",
   description: "关于我",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

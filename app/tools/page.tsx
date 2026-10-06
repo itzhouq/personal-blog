@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { site } from "@/site.config";
 
 export const metadata: Metadata = {
   title: "工具",
   description: "我做的小工具与服务",
+  alternates: { canonical: "/tools" },
 };
 
 export default function ToolsPage() {
@@ -27,7 +29,15 @@ export default function ToolsPage() {
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{t.desc}</p>
             </>
           );
-          return t.href ? (
+          return t.href.startsWith("/") ? (
+            <Link
+              key={t.title}
+              href={t.href}
+              className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6 transition-all hover:border-[var(--accent)] hover:shadow-sm"
+            >
+              {inner}
+            </Link>
+          ) : t.href ? (
             <a
               key={t.title}
               href={t.href}
