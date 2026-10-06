@@ -15,8 +15,5 @@ next-env.d.ts
 # env
 .env*
 
-# 私有文档：架构方案与变现 playbook，绝不入库
-/PLAYBOOK.md
-
 # vercel
 .vercel
