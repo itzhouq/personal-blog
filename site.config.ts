@@ -11,8 +11,8 @@ export const site = {
   description: "记录独立开发、AI 工具与副业探索的 Build in Public 日常",
   author: "风飞扬itzhouq",
   email: "zhouq218@gmail.com",
-  /** 部署后的真实域名（影响 sitemap/RSS/OG 链接） */
-  siteUrl: "https://example.com",
+  /** 部署后的真实域名（影响 sitemap/RSS/OG 链接）；绑自定义域名后替换 */
+  siteUrl: "https://personal-blog.pages.dev",
   locale: "zh-CN",
   social: {
     github: "https://github.com/itzhouq",
@@ -53,12 +53,12 @@ export const site = {
       badge: "征集想法",
     },
   ],
-  /** giscus 评论：填入 GitHub Discussions 仓库信息后自动开启，留空则隐藏 */
+  /** giscus 评论：基于仓库 Discussions，giscus App 安装到仓库后自动生效 */
   giscus: {
-    repo: "",
-    repoId: "",
-    category: "",
-    categoryId: "",
+    repo: "itzhouq/personal-blog",
+    repoId: "R_kgDOU-SsIQ",
+    category: "Announcements",
+    categoryId: "DIC_kwDOU-SsIc4DHLjn",
   },
   /** umami 统计：填入自托管地址与 website id 后自动开启 */
   analytics: {
