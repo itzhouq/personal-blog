@@ -26,6 +26,7 @@ export default function ChatPage() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [cfgOpen, setCfgOpen] = useState(true);
   const abortRef = useRef<AbortController | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -149,7 +150,11 @@ export default function ChatPage() {
   return (
     <div className="flex h-[calc(100dvh-14rem)] min-h-[32rem] flex-col">
       {/* 连接配置 */}
-      <details className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-4 text-sm" open={!ready}>
+      <details
+        className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-4 text-sm"
+        open={cfgOpen}
+        onToggle={(e) => setCfgOpen((e.target as HTMLDetailsElement).open)}
+      >
         <summary className="cursor-pointer select-none font-medium">
           连接配置 {ready && <span className="ml-1 text-xs text-[var(--muted)]">（已保存到本机浏览器）</span>}
         </summary>
