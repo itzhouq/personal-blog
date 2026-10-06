@@ -66,12 +66,25 @@ summary: 一句话摘要（列表页和 SEO 描述用）
 
 ## 部署
 
+当前托管在 **Cloudflare Pages**（纯静态导出模式）：
+
 ```bash
-npm run build && npm start   # 任意 VPS，配合 nginx/caddy 反代
+npm run deploy   # = next build + wrangler pages deploy out
 ```
 
-- **Vercel / Cloudflare Pages**：直接连 Git 仓库，零配置（国内访问速度自测，CF Pages 通常更稳）；
-- **VPS**：`pm2 start npm -- start` + caddy 反代 80/443；
+- 线上地址：https://personal-blog-302.pages.dev
+- 首次部署前需 `npx wrangler login` 授权 Cloudflare；
+- 也可接 GitHub 集成自动部署：Cloudflare Dashboard → Workers & Pages → personal-blog → 连接本仓库（构建命令 `npm run build`，输出目录 `out`）；
+- 绑自定义域名：Pages 项目 → Custom domains。
+
+其他方式：
+
+```bash
+npm start                     # VPS 直接跑 Node（配合 nginx/caddy 反代）
+# Vercel：导入仓库即可（去掉 next.config.ts 的 output: "export"）
+```
+
+- **Vercel / Cloudflare Pages Git 集成**：连仓库零配置部署（国内访问速度自测，CF Pages 通常更稳）；
 - 局域网自用：`npm start` 后放行防火墙端口即可（生产模式无 dev 模式的跨域问题）。
 
 ## 变现预留位（Roadmap）

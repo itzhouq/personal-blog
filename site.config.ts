@@ -12,7 +12,7 @@ export const site = {
   author: "风飞扬itzhouq",
   email: "zhouq218@gmail.com",
   /** 部署后的真实域名（影响 sitemap/RSS/OG 链接）；绑自定义域名后替换 */
-  siteUrl: "https://personal-blog.pages.dev",
+  siteUrl: "https://personal-blog-302.pages.dev",
   locale: "zh-CN",
   social: {
     github: "https://github.com/itzhouq",
