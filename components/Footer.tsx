@@ -15,6 +15,9 @@ export default function Footer() {
           <a href={site.social.github} target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--accent)]">
             GitHub
           </a>
+          <a href={site.social.repo} target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--accent)]">
+            本站源码
+          </a>
           <a href={site.social.x} target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--accent)]">
             X
           </a>

@@ -17,6 +17,8 @@ export const site = {
   social: {
     github: "https://github.com/itzhouq",
     x: "https://x.com/itzhouq2026",
+    /** 本站源码仓库（页脚外链） */
+    repo: "https://github.com/itzhouq/personal-blog",
   },
   nav: [
     { href: "/", label: "首页" },
