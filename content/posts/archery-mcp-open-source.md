@@ -59,7 +59,7 @@ draft: true
 1. **代码收敛**：删掉两个历史残留包，包名去掉公司标识，敏感默认值改成必填环境变量；
 2. **全局替换**：内网地址、实例名、库名、业务表名、测试假数据，全部换成通用占位（`https://archery.example.com`、`prod-app-db`、`app_users`……）；
 3. **重建 git 历史**：与其清洗两个提交，不如重开一个干净初始提交，提交身份换掉；
-4. **加防线**：写了敏感词扫描脚本挂进 CI，`bloks`、内网域名这类模式一旦再出现，CI 直接红——防止以后"顺手一提交"把内部信息带回来；
+4. **加防线**：写了敏感词扫描脚本挂进 CI，公司标识词、内网域名这类模式一旦再出现，CI 直接红——防止以后"顺手一提交"把内部信息带回来；
 5. **合规文件**：MIT License、README 顶部三声明（非官方 / 免责 / 安全模型）、SECURITY.md 私密漏洞报告渠道。
 
 最难的不是改文件，是意识到**历史也是文件**。`git log` 里的公司邮箱、被删掉文件的历史版本，都在仓库里躺着。开源不是"删掉敏感文件再 push"，是"从零构造一个可以公开的仓库"。
@@ -68,4 +68,12 @@ draft: true
 
 Roadmap 上最想做的：**跨实例 schema diff**——对比 test 和 prod 的表结构/索引差异，直接生成变更清单。这其实就是痛点一的完全体，也是同类项目没有的能力。
 
-仓库：[github.com/itzhouq/archery-mcp](https://github.com/itzhouq/archery-mcp)，MIT 协议，`uvx archery-mcp` 即可用。如果你的团队也在用 Archery，欢迎试试、提 Issue。
+仓库：[github.com/itzhouq/archery-mcp](https://github.com/itzhouq/archery-mcp)，MIT 协议，`uvx archery-mcp` 即可用。如果你的团队也在用 Archery，欢迎试试、提 Issue——或者直接在仓库里给我点个 star，这是独立开发者最便宜的鼓励。
+
+## 相关链接
+
+- 仓库：[github.com/itzhouq/archery-mcp](https://github.com/itzhouq/archery-mcp)
+- PyPI：[pypi.org/project/archery-mcp](https://pypi.org/project/archery-mcp/)（`pip install archery-mcp` / `uvx archery-mcp`）
+- 本文作者：[itzhouq](https://github.com/itzhouq)，在 [itzhouq.cn](https://itzhouq.cn) 持续 build in public，做的工具都挂在[工具页](https://itzhouq.cn/tools)
+
+这篇文章首发于 [itzhouq.cn](https://itzhouq.cn)，也会同步到掘金/知乎等平台。如果你在做类似的事（AI 工作流、开发者工具、独立开发），欢迎来我的网站逛逛，或 GitHub 上关注我——schema diff 做完我会再写一篇。
