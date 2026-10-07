@@ -43,6 +43,12 @@ export const site = {
       badge: "可用",
     },
     {
+      title: "Archery MCP",
+      desc: "开源的 Archery MCP Server：让 AI 编码助手只读接入生产库查表结构、检查上线 SQL，嵌入日常开发工作流",
+      href: "https://github.com/itzhouq/archery-mcp",
+      badge: "开源",
+    },
+    {
       title: "大模型 API 中转商店",
       desc: "OpenAI 兼容接口，按量计费，注册即送额度",
       href: "",
