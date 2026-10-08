@@ -3,6 +3,7 @@ title: 用 OmniRoute 自建 AI 网关并开放局域网访问（踩坑实录）
 date: 2026-10-04
 tags: [AI, 教程, Next.js]
 summary: Next.js 写的 AI 网关在 dev 模式下局域网访问会无限转圈，生产模式 + 三个配置项才是正解。完整过程与三个坑。
+draft: true
 ---
 
 [OmniRoute](https://github.com) 是一个开源的"免费 AI 网关"：聚合 358 个提供商的免费额度，对外提供 OpenAI 兼容 API，带 Dashboard。这篇文章记录我把它部署到本机、并开放给局域网其他电脑使用的完整过程，重点是三个坑。

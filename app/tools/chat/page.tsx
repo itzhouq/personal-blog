@@ -165,7 +165,7 @@ export default function ChatPage() {
               className={inputCls}
               value={cfg.baseURL}
               onChange={(e) => setCfg({ ...cfg, baseURL: e.target.value })}
-              placeholder="例如 https://api.openai.com/v1 或局域网网关 http://10.1.74.64:20128/v1"
+              placeholder="例如 https://api.openai.com/v1"
             />
           </label>
           <label>
@@ -199,7 +199,7 @@ export default function ChatPage() {
         </div>
         <p className="mt-3 text-xs leading-relaxed text-[var(--muted)]">
           Key 仅保存在你自己的浏览器（localStorage），不经过任何第三方。若请求报
-          CORS 跨域错误，说明该端点未开放浏览器直连——局域网网关请在局域网内访问。
+          CORS 跨域错误，说明该端点未开放浏览器直连。
         </p>
       </details>
 

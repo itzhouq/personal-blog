@@ -37,7 +37,7 @@ export default function SearchPage() {
         autoFocus
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="输入关键词，如：OmniRoute、Next.js…"
+        placeholder="输入关键词，如：Next.js、AI 工具…"
         className="mt-6 w-full rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-3 outline-none transition-colors focus:border-[var(--accent)]"
       />
       <ul className="mt-6 divide-y divide-[var(--border)]">

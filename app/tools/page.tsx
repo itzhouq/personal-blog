@@ -13,8 +13,7 @@ export default function ToolsPage() {
     <div className="py-12">
       <h1 className="text-3xl font-bold">小工具 & 服务</h1>
       <p className="mt-2 max-w-2xl text-[var(--muted)]">
-        这里会陆续挂上我做的小工具和正在运营的服务——都建立在本站的自建
-        AI 网关之上，敬请期待。
+        这里会陆续挂上我做的小工具，敬请期待。
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {site.tools.map((t) => {

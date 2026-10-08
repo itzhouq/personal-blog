@@ -32,7 +32,6 @@ export const site = {
     { text: "个人博客网站（本站）", done: true },
     { text: "每周一篇 build in public 记录", done: false },
     { text: "第一个挂载的小工具（AI Chat 游乐场）", done: true },
-    { text: "大模型 API 中转商店上线", done: false },
   ],
   /** /tools 页面卡片：后续挂自己的小工具、商店入口 */
   tools: [
@@ -47,12 +46,6 @@ export const site = {
       desc: "开源的 Archery MCP Server：让 AI 编码助手只读接入生产库查表结构、检查上线 SQL，嵌入日常开发工作流",
       href: "https://github.com/itzhouq/archery-mcp",
       badge: "开源",
-    },
-    {
-      title: "大模型 API 中转商店",
-      desc: "OpenAI 兼容接口，按量计费，注册即送额度",
-      href: "",
-      badge: "筹备中",
     },
     {
       title: "更多小工具",

@@ -89,6 +89,6 @@ npm start                     # VPS 直接跑 Node（配合 nginx/caddy 反代�
 
 ## 变现预留位（Roadmap）
 
-- `/tools`：小工具入口（同仓库加路由即可，调用自建 AI 网关）
+- `/tools`：小工具入口（同仓库加路由即可）
 - 首页"正在构建"：build in public 进度展示
-- 后续：API 中转商店入口、返利链接位、Newsletter
+- 后续：返利链接位、Newsletter
