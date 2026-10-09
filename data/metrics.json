@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "startedAt": "2026-10",
+    "goal": 50000,
+    "goalLabel": "一年赚 5 万",
+    "incomeNote": "口径：收入=实际到账；美元收入按 meta.exchangeRate 折算人民币后计入总收入；UV=自然月去重访客；PV=页面浏览量；文章=博客正式发布数",
+    "updatedAt": "2026-10-10"
+  },
+  "metrics": {
+    "x-followers": {
+      "label": "X 粉丝",
+      "kind": "count",
+      "mode": "snapshot",
+      "color": "#534ab7"
+    },
+    "gzh-followers": {
+      "label": "公众号粉丝",
+      "kind": "count",
+      "mode": "snapshot",
+      "color": "#993556"
+    },
+    "blog-posts": {
+      "label": "累计文章数",
+      "kind": "count",
+      "mode": "snapshot",
+      "color": "#ba7517"
+    },
+    "blog-uv": {
+      "label": "博客 UV（月）",
+      "kind": "count",
+      "mode": "period",
+      "color": "#1d9e75"
+    },
+    "blog-pv": {
+      "label": "博客 PV（月）",
+      "kind": "count",
+      "mode": "period",
+      "color": "#378add"
+    },
+    "gg-exposure": {
+      "label": "攻略站合计曝光（月）",
+      "kind": "count",
+      "mode": "period",
+      "color": "#085041"
+    },
+    "income-total": {
+      "label": "副业总收入（元/月，美元按 7.1 折算）",
+      "kind": "money",
+      "mode": "period",
+      "color": "#d85a30",
+      "computed": true
+    }
+  },
+  "entries": [
+    {
+      "month": "2026-10",
+      "values": {
+        "x-followers": 3,
+        "gzh-followers": 769,
+        "blog-posts": 5,
+        "blog-uv": 0,
+        "blog-pv": 0,
+        "gg-exposure": 0,
+        "income-total": 155.49
+      },
+      "note": "实验 Month 0：博客上线（10-07），人设与数据公开承诺定稿，数据大盘上线"
+    }
+  ]
+}

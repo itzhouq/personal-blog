@@ -9,6 +9,7 @@
     "deploy": "next build && wrangler pages deploy out --project-name personal-blog --branch main"
   },
   "dependencies": {
+    "echarts": "^6.1.0",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

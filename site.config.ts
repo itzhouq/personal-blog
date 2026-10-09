@@ -38,6 +38,7 @@ export const site = {
     { href: "/blog", label: "文章" },
     { href: "/tags", label: "标签" },
     { href: "/tools", label: "工具" },
+    { href: "/dashboard", label: "数据" },
     { href: "/about", label: "关于" },
   ],
   /** 首页"正在构建"路线图（build in public 展示） */
@@ -90,5 +91,7 @@ export const site = {
   analytics: {
     umamiSrc: "",
     umamiId: "",
+    /** Cloudflare Web Analytics beacon token（CF Dashboard → Web Analytics → 管理 JS 片段）；留空=关闭 */
+    cfBeaconToken: "",
   },
 };
