@@ -36,6 +36,12 @@ export const site = {
   /** /tools 页面卡片：后续挂自己的小工具、商店入口 */
   tools: [
     {
+      title: "在线工具箱",
+      desc: "14 个纯前端小工具：图片压缩/裁剪/水印、GIF 合成、违禁词检测、JWT 解析……全部在浏览器本地运行，数据不上传",
+      href: "https://tools.itzhouq.cn",
+      badge: "可用",
+    },
+    {
       title: "AI Chat 游乐场",
       desc: "在线体验大模型对话：填入任意 OpenAI 兼容端点 + Key 即可，支持流式输出与多轮对话",
       href: "/tools/chat",
