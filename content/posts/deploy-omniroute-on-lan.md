@@ -24,7 +24,7 @@ PORT=20128 npm start
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  baseURL: "http://10.1.74.64:20128/v1",
+  baseURL: "http://192.168.1.100:20128/v1",
   apiKey: "sk-xxx", // 网关生成的 key
 });
 
@@ -67,7 +67,7 @@ npm install better-sqlite3 --no-save --foreground-scripts
 
 ```powershell
 New-NetFirewallRule -DisplayName "OmniRoute Dashboard" -Direction Inbound `
-  -Protocol TCP -LocalPort 20128 -RemoteAddress 10.1.0.0/16 -Action Allow
+  -Protocol TCP -LocalPort 20128 -RemoteAddress 192.168.1.0/24 -Action Allow
 ```
 
 - `20128`：Dashboard + API（需要开放）
@@ -78,8 +78,8 @@ New-NetFirewallRule -DisplayName "OmniRoute Dashboard" -Direction Inbound `
 
 完成后，局域网里任何一台电脑都能：
 
-- 打开 `http://10.1.74.64:20128/dashboard` 管理通道；
-- 用 OpenAI 兼容客户端把 base URL 指到 `http://10.1.74.64:20128/v1`，模型填 `auto`，白嫖聚合额度。
+- 打开 `http://192.168.1.100:20128/dashboard` 管理通道；
+- 用 OpenAI 兼容客户端把 base URL 指到 `http://192.168.1.100:20128/v1`，模型填 `auto`，白嫖聚合额度。
 
 ## 两个小提醒
 
