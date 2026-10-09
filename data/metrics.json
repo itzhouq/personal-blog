@@ -4,7 +4,7 @@
     "goal": 50000,
     "goalLabel": "一年赚 5 万",
     "incomeNote": "口径：收入=实际到账；美元收入按 meta.exchangeRate 折算人民币后计入总收入；UV=自然月去重访客；PV=页面浏览量；文章=博客正式发布数",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-09"
   },
   "metrics": {
     "x-followers": {
@@ -58,8 +58,8 @@
         "x-followers": 3,
         "gzh-followers": 769,
         "blog-posts": 5,
-        "blog-uv": 0,
-        "blog-pv": 0,
+        "blog-uv": 948,
+        "blog-pv": 2602,
         "gg-exposure": 0,
         "income-total": 155.49
       },
