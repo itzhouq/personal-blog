@@ -48,6 +48,12 @@ export const site = {
       badge: "开源",
     },
     {
+      title: "Grafana MCP",
+      desc: "开源的 Grafana MCP Server：让 AI 编码时直接读 test/prod 的 Loki 日志、Prometheus 指标与 Tempo 链路，双环境一键切换",
+      href: "https://github.com/itzhouq/grafana-mcp",
+      badge: "开源",
+    },
+    {
       title: "更多小工具",
       desc: "文案助手 / 文档问答 / 效率小脚本……",
       href: "",
