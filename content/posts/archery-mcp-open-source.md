@@ -76,3 +76,9 @@ Roadmap 上最想做的：**跨实例 schema diff**——对比 test 和 prod �
 - 本文作者：[itzhouq](https://github.com/itzhouq)，在 [itzhouq.cn](https://itzhouq.cn) 持续 build in public，做的工具都挂在[工具页](https://itzhouq.cn/tools)
 
 这篇文章首发于 [itzhouq.cn](https://itzhouq.cn)，也会同步到掘金/知乎等平台。如果你在做类似的事（AI 工作流、开发者工具、独立开发），欢迎来我的网站逛逛，或 GitHub 上关注我——schema diff 做完我会再写一篇。
+
+## 关于作者
+
+我是 **搞副业的老周 itzhouq**：10 年后端程序员，湖北农村自学编程转行，人在上海——白天写代码，晚上带娃，剩下的时间用 AI Agent 折腾副业。做的东西、流量数据、赚没赚到钱，全部公开，失败了也发。
+
+archery-mcp 已开源（`pip install archery-mcp` 即装即用），schema diff 等新能力在按需迭代。想交流 AI 搞副业、MCP 与工具搭建——**关注公众号「搞副业的老周itzhouq」，回复「微信」加我**，第一时间同步新文章和翻车现场。

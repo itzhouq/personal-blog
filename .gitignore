@@ -17,3 +17,6 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# 本地设计源文件（含授权字体，不进公开仓库）
+/assets/

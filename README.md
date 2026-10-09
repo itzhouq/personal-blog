@@ -56,6 +56,25 @@ summary: 一句话摘要（列表页和 SEO 描述用）
 草稿：加 draft: true，生产构建自动剔除，dev 模式可见。
 ```
 
+### 图片图床
+
+文章插图不存本地仓库，统一走自建图床（Cloudflare R2 + PicGo，自定义域名），在 Markdown 里直接引用外链：
+
+```markdown
+![描述](https://pic.itzhouq.cn/your-image.png)
+```
+
+本机上传（PicGo 常驻时）：
+
+```bash
+curl --location --request POST 'http://127.0.0.1:36677/upload' \
+--data-raw '{
+    "list": ["/absolute/path/to/image.png"]
+}'
+```
+
+成功后返回 `{"success":true,"result":["https://pic.itzhouq.cn/your-image.png"]}`。上传前给文件起个唯一名字（加日期前缀等），避免桶内重名覆盖。
+
 ## 个性化（上线前 checklist）
 
 1. **`site.config.ts`**：改 `name / author / description / siteUrl / email / social`，调整导航和"正在构建"路线图、工具卡片；

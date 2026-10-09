@@ -21,6 +21,9 @@ export default function Footer() {
           <a href={site.social.x} target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--accent)]">
             X
           </a>
+          <Link href="/about#wechat" className="transition-colors hover:text-[var(--accent)]">
+            公众号
+          </Link>
           <Link href="/search" className="transition-colors hover:text-[var(--accent)]">
             搜索
           </Link>

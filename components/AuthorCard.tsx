@@ -62,6 +62,37 @@ export default function AuthorCard() {
       <p className="mt-4 border-t border-[var(--border)] pt-3 text-sm text-[var(--muted)]">
         这里全是普通人折腾出来的一手经验。如果这篇帮你省了时间，关注一下就是最好的支持。
       </p>
+
+      {/* 微信关注引导：公众号搜一搜 + 个人微信号 */}
+      <div className="mt-4 flex flex-col gap-4 border-t border-[var(--border)] pt-4 sm:flex-row sm:items-center">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-medium">公众号：{site.wechat.officialAccount}</p>
+          <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
+            微信搜一搜即可关注，副业实验复盘同步更新。
+          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={site.wechat.searchBanner}
+            alt={`微信搜一搜：${site.wechat.officialAccount}`}
+            width={600}
+            height={77}
+            loading="lazy"
+            className="mt-3 w-full max-w-xs rounded-md"
+          />
+        </div>
+        <div className="shrink-0 text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={site.wechat.contactQr}
+            alt="个人微信号二维码"
+            width={96}
+            height={96}
+            loading="lazy"
+            className="mx-auto h-24 w-24 rounded-lg border border-[var(--border)]"
+          />
+          <p className="mt-1.5 text-xs text-[var(--muted)]">扫码加我微信</p>
+        </div>
+      </div>
     </aside>
   );
 }

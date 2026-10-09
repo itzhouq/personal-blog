@@ -87,3 +87,9 @@ NEXT_PUBLIC_BASE_PATH=/tools npm run build   # 子路径：资源引用带 /tool
 - 每个工具都有独立短子域名，敲 `json.it` 就能自动补全直达：JSON 格式化 `json`、Token 解析 `jwt`、时间戳 `ts`、二维码 `qr`、图片压缩 `img`、图片裁剪 `crop`、图片水印 `mark`、GIF 合成 `gif`、长图切片 `slice`、文字转图片 `card`、小红书封面 `cover`、违禁词检测 `words`、简繁互转 `jianfan`、人民币大写 `rmb`——统一格式为 `<名字>.itzhouq.cn`
 - 开源仓库：[https://github.com/itzhouq/web-tools](https://github.com/itzhouq/web-tools)，欢迎 Star 和提 Issue
 - 技术栈：Next.js 16 静态导出 + Tailwind CSS 4 + Cloudflare Pages/Workers
+
+## 关于作者
+
+我是 **搞副业的老周 itzhouq**：10 年后端程序员，湖北农村自学编程转行，人在上海——白天写代码，晚上带娃，剩下的时间用 AI Agent 折腾副业。做的东西、流量数据、赚没赚到钱，全部公开，失败了也发。
+
+文中 14 个工具全部免费用，最新加入的公众号封面工具（gzh.itzhouq.cn）专为给自己供封面而做。想交流 AI 搞副业、工具搭建，或者纯粹围观翻车实录——**关注公众号「搞副业的老周itzhouq」，回复「微信」加我**，第一时间同步新文章和翻车现场。

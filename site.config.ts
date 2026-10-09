@@ -20,6 +20,19 @@ export const site = {
     /** 本站源码仓库（页脚外链） */
     repo: "https://github.com/itzhouq/personal-blog",
   },
+  /** 微信生态：公众号 + 个人微信号（物料图在 public/wechat/） */
+  wechat: {
+    /** 公众号名称（微信搜一搜可搜到） */
+    officialAccount: "搞副业的老周itzhouq",
+    /** 公众号「搜一搜」搜索框横幅 */
+    searchBanner: "/wechat/gzh-search-banner.webp",
+    /** 公众号扫码 + 搜一搜联合物料（含二维码） */
+    scanSearchBanner: "/wechat/gzh-scan-search.webp",
+    /** 个人微信号二维码（正方形，裁剪自官方名片图） */
+    contactQr: "/wechat/wechat-contact-qr-square.png",
+    /** 个人微信号完整名片图（竖版长图） */
+    contactCard: "/wechat/wechat-contact-qrcode.png",
+  },
   nav: [
     { href: "/", label: "首页" },
     { href: "/blog", label: "文章" },
