@@ -60,7 +60,7 @@ export default function AuthorCard() {
       </ul>
 
       <p className="mt-4 border-t border-[var(--border)] pt-3 text-sm text-[var(--muted)]">
-        不卖课。如果这篇帮你省了时间，关注一下就是最好的支持。
+        这里全是普通人折腾出来的一手经验。如果这篇帮你省了时间，关注一下就是最好的支持。
       </p>
     </aside>
   );
