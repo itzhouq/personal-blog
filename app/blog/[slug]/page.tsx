@@ -7,6 +7,7 @@ import Toc from "@/components/Toc";
 import TagBadge from "@/components/TagBadge";
 import Giscus from "@/components/Giscus";
 import CodeCopy from "@/components/CodeCopy";
+import AuthorCard from "@/components/AuthorCard";
 
 export const dynamicParams = false;
 
@@ -69,6 +70,8 @@ export default async function PostPage({
           className="prose prose-stone dark:prose-invert mt-8 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+
+        <AuthorCard />
 
         <nav className="mt-12 grid gap-4 border-t border-[var(--border)] pt-6 text-sm sm:grid-cols-2">
           {prev ? (
