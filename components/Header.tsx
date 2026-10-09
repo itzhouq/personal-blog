@@ -11,9 +11,14 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur">
       <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--accent)] text-sm text-white">
-            {site.author.slice(0, 1)}
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/avatar-96.png"
+            alt={site.author}
+            width={28}
+            height={28}
+            className="h-7 w-7 rounded-md"
+          />
           <span className="hidden sm:inline">{site.name}</span>
         </Link>
         <nav className="flex items-center gap-0.5 text-sm sm:gap-1">
