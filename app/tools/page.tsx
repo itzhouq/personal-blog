@@ -13,7 +13,7 @@ export default function ToolsPage() {
     <div className="py-12">
       <h1 className="text-3xl font-bold">小工具 & 服务</h1>
       <p className="mt-2 max-w-2xl text-[var(--muted)]">
-        这里会陆续挂上我做的小工具，敬请期待。
+        我做的小工具和服务都会挂在这里；页面下方还内嵌了完整的在线工具箱。
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {site.tools.map((t) => {
@@ -56,6 +56,30 @@ export default function ToolsPage() {
           );
         })}
       </div>
+
+      {/* 内嵌完整工具箱（tools.itzhouq.cn），数据与子域名站实时同步 */}
+      <section className="mt-12">
+        <div className="flex items-end justify-between">
+          <h2 className="text-xl font-bold">在线工具箱</h2>
+          <a
+            href="https://tools.itzhouq.cn"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+          >
+            独立打开 →
+          </a>
+        </div>
+        <p className="mt-2 text-sm text-[var(--muted)]">
+          全部纯前端、在浏览器本地运行、数据不上传——已直接嵌入下方，也可以独立打开。
+        </p>
+        <iframe
+          src="https://tools.itzhouq.cn"
+          title="在线工具箱"
+          loading="lazy"
+          className="mt-5 h-[820px] w-full rounded-xl border border-[var(--border)]"
+        />
+      </section>
     </div>
   );
 }
