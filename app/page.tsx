@@ -130,15 +130,31 @@ export default function Home() {
           </Link>
         </div>
         <div className="mt-5 grid gap-4 sm:grid-cols-3">
-          {site.tools.slice(0, 3).map((t) => (
-            <div
-              key={t.title}
-              className="rounded-xl border border-dashed border-[var(--border)] p-5"
-            >
-              <p className="font-medium">{t.title}</p>
-              <p className="mt-1.5 text-sm leading-relaxed text-[var(--muted)]">{t.desc}</p>
-            </div>
-          ))}
+          {site.tools.slice(0, 3).map((t) => {
+            const inner = (
+              <>
+                <p className="font-medium">{t.title}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-[var(--muted)]">{t.desc}</p>
+              </>
+            );
+            const cls =
+              "block rounded-xl border border-dashed border-[var(--border)] p-5 transition-colors hover:border-[var(--accent)]";
+            if (!t.href)
+              return (
+                <div key={t.title} className={`${cls} opacity-80`}>
+                  {inner}
+                </div>
+              );
+            return t.href.startsWith("/") ? (
+              <Link key={t.title} href={t.href} className={cls}>
+                {inner}
+              </Link>
+            ) : (
+              <a key={t.title} href={t.href} target="_blank" rel="noreferrer" className={cls}>
+                {inner}
+              </a>
+            );
+          })}
         </div>
       </section>
     </div>
