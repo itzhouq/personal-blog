@@ -4,12 +4,12 @@
  */
 export const site = {
   /** 站点名（页面标题后缀、页脚） */
-  name: "风飞扬itzhouq",
+  name: "搞副业的老周itzhouq",
   /** 首页浏览器标签标题 */
-  title: "风飞扬itzhouq · Build in Public",
+  title: "搞副业的老周itzhouq · Build in Public",
   /** SEO 描述 */
   description: "记录独立开发、AI 工具与副业探索的 Build in Public 日常",
-  author: "风飞扬itzhouq",
+  author: "搞副业的老周itzhouq",
   email: "zhouq218@gmail.com",
   /** 部署后的真实域名（影响 sitemap/RSS/OG 链接）；绑自定义域名后替换 */
   siteUrl: "https://itzhouq.cn",
