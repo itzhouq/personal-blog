@@ -7,7 +7,7 @@ summary: 微信群消息太多看不过来？我用 MCP 把本地解密的微信
 
 微信群加得越来越多，每天消息上千条，真正有价值的淹没在闲聊和表情包里。手动翻一遍所有群要半小时，还不一定抓到重点。
 
-前段时间做 MCP（Model Context Protocol）工具上瘾——[archery-mcp]({{< ref "archery-mcp-open-source.md" >}}) 让 AI 只读生产库，[grafana-mcp]({{< ref "grafana-mcp-open-source.md" >}}) 让 AI 看监控——自然就想到：**能不能让 AI 直接读我的微信群消息，帮我总结？**
+前段时间做 MCP（Model Context Protocol）工具上瘾——[archery-mcp]({{< ref "archery-mcp-open-source.md" >}}) 让 AI 只读生产库，grafana-mcp 让 AI 看监控（方案整理中，后续分享）——自然就想到：**能不能让 AI 直接读我的微信群消息，帮我总结？**
 
 答案是可以，而且效果比预期好得多。这篇聊聊完整的技术方案和思路。
 
@@ -89,7 +89,7 @@ MCP（Model Context Protocol）是 Anthropic 推的协议，让 AI 通过标准�
 
 实际测试了一个 3417 条消息的技术交流群，近一个月的数据：
 
-1. 调用 `get_group_digest(group="A 股财富自由之路", hours=720, limit=500)` 拉取清洗发言流
+1. 调用 `get_group_digest(group="某交流群", hours=720, limit=500)` 拉取清洗发言流
 2. AI 自动生成结构化总结：
    - **活跃度排行**：谁发言最多、谁是核心输出者
    - **投资策略讨论**：价值投资 vs 趋势交易、板块轮动逻辑
@@ -145,7 +145,7 @@ AI 自动按未读数排序，优先处理最活跃的群，每个群输出一�
 如果你对这个方向感兴趣，可以：
 - 关注本博客后续更新，我会继续分享使用经验
 - 到 [itzhouq.cn](https://itzhouq.cn) 找联系方式交流
-- **加我微信免费获取思路和方案**（备注"微信MCP"）
+- **关注公众号「搞副业的老周itzhouq」，回复「微信」加我**（备注"微信MCP"，免费聊思路和方案）
 
 ## 复盘
 
@@ -169,6 +169,12 @@ AI 自动按未读数排序，优先处理最活跃的群，每个群输出一�
 
 选择**只发思路 + 加微信免费交流**是一个折中：既能展示技术能力（IP 积累），又不直接踩红线。感兴趣的人可以直接加我微信聊。
 
+## 关于作者
+
+我是 **搞副业的老周 itzhouq**：10 年后端程序员，湖北农村自学编程转行，人在上海——白天写代码，晚上带娃，剩下的时间用 AI Agent 折腾副业。做的东西、流量数据、赚没赚到钱，全部公开，失败了也发。
+
+archery-mcp 已开源，微信数据这条线只分享思路不开源。想交流 MCP 工具、AI 工作流，或者围观翻车实录——**关注公众号「搞副业的老周itzhouq」，回复「微信」加我**，第一时间同步新文章和翻车现场。
+
 ---
 
-*如果你也在折腾 MCP 工具或微信数据本地化处理，欢迎到 [itzhouq.cn](https://itzhouq.cn) 交流。本博客其他 MCP 相关文章：[archery-mcp 开源复盘]({{< ref "archery-mcp-open-source.md" >}}) | [grafana-mcp 开源复盘]({{< ref "grafana-mcp-open-source.md" >}})*
+*如果你也在折腾 MCP 工具或微信数据本地化处理，欢迎到 [itzhouq.cn](https://itzhouq.cn) 交流。本博客其他 MCP 相关文章：[archery-mcp 开源复盘]({{< ref "archery-mcp-open-source.md" >}})*
