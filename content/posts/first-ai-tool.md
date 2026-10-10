@@ -5,7 +5,7 @@ tags: [AI, Next.js, Build in Public]
 summary: 从设计决策到上线只花了一个下午：BYOK 模式、流式输出、混合内容的坑——本站第一个工具「AI Chat 游乐场」的完整复盘。
 ---
 
-上个月写[从零手写博客](/blog/build-blog-from-scratch)的时候留了个伏笔：内容站的尽头是"内容 → 工具 → 产品"。这个伏笔今天兑现了——本站第一个小工具 [AI Chat 游乐场](/tools/chat)上线，这篇文章复盘它的设计决策和踩坑。
+上个月写[从零手写博客](/blog/build-blog-from-scratch)的时候留了个伏笔：内容站的尽头是"内容 → 工具 → 产品"。这个伏笔兑现了——本站第一个小工具 [AI Chat 游乐场](/tools/chat)上线，这篇文章复盘它的设计决策和踩坑。
 
 ## 为什么第一个工具是 Chat
 

@@ -5,7 +5,7 @@ tags: [独立开发, Next.js, Cloudflare, 工具站, 开源]
 summary: 压缩图片、查 Token、写文案怕踩违禁词……这些小事每次都要现找在线工具，广告多还要上传隐私。于是自己写了一个：14 个纯前端工具，全部在浏览器本地完成，双域名形态上线，代码开源。聊聊工具清单、架构取舍和上线过程。
 ---
 
-[搞副业的老周itzhouq的工具箱](https://tools.itzhouq.cn) 今天上线了：14 个解决日常小麻烦的在线工具，全部在你的浏览器本地运行，不上传任何数据。代码开源在 [GitHub](https://github.com/itzhouq/web-tools)。
+[搞副业的老周itzhouq的工具箱](https://tools.itzhouq.cn) 上线了：14 个解决日常小麻烦的在线工具，全部在你的浏览器本地运行，不上传任何数据。代码开源在 [GitHub](https://github.com/itzhouq/web-tools)。
 
 这篇照例是复盘：为什么做、怎么取舍的、有哪些值得一提的设计，以及"一个代码库、两种域名形态"的上线方案。
 
