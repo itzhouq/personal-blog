@@ -1,5 +1,5 @@
 ---
-title: 给博客挂上第一个 AI 小工具
+title: 一个下午，给博客挂上第一个 AI 工具
 date: 2026-10-07
 tags: [AI, Next.js, Build in Public]
 summary: 从设计决策到上线只花了一个下午：BYOK 模式、流式输出、混合内容的坑——本站第一个工具「AI Chat 游乐场」的完整复盘。

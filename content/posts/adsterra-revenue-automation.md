@@ -1,5 +1,5 @@
 ---
-title: 给广告收益装上自动挡：Adsterra API 化改造复盘
+title: 看收益这件事，我从工作清单里删掉了
 date: 2026-10-11
 tags: [Adsterra, API, 自动化, Build in Public]
 summary: 挂广告靠 Agent 开浏览器取码，看收益靠手动记账——两件重复劳动，一个烧 token 一个靠忘性。这篇复盘我怎么把 Adsterra 改成 API 优先、浏览器只留三件事，再把收益公开接成每周一自动回填的管道。
