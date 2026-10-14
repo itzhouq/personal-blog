@@ -1,0 +1,30 @@
+# itzhouq.cn — 老周的博客
+
+> 老周（itzhouq）：10 年后端程序员，湖北农村自学编程，人在上海带娃，用 AI Agent 搞副业。数据全公开，失败了也发。
+
+Personal blog of itzhouq (老周) — a backend developer with 10 years of experience, self-taught from rural Hubei, now based in Shanghai. He builds AI Agent side projects in public and shares real numbers, including failures. Posts are written in Chinese (Simplified) and are first-person experience reports with verifiable data.
+
+## About the author
+- [About](https://itzhouq.cn/about): background, current projects, and contact channels.
+- [X @itzhouq2026](https://x.com/itzhouq2026): daily build-in-public updates.
+- [Online tools](https://tools.itzhouq.cn): free browser-based tools built for personal use.
+- [RSS](https://itzhouq.cn/rss.xml): full-text feed.
+
+## All posts
+- [为什么我决定 Build in Public](https://itzhouq.cn/blog/hello-build-in-public): why an ordinary backend developer chose to build side projects in public.
+- [2026 年还手写博客？我从空目录写了一个](https://itzhouq.cn/blog/build-blog-from-scratch): building a blog from scratch instead of using a framework.
+- [一个下午，给博客挂上第一个 AI 工具](https://itzhouq.cn/blog/first-ai-tool): shipping the first AI feature on the blog in one afternoon.
+- [AI 重写了我 6 个标题，旧的全输给一条公式](https://itzhouq.cn/blog/ai-title-workflow): an AI title-rewriting experiment with before/after data.
+- [看收益这件事，我从工作清单里删掉了](https://itzhouq.cn/blog/adsterra-revenue-automation): automating ad-revenue reporting and removing it from the daily checklist.
+- [个人工作台很火，但我给自己写了面「站况墙」](https://itzhouq.cn/blog/site-ops-dashboard): a self-built site-status dashboard for a multi-site operator.
+- [14 个小工具，0 上传：我给自己写的在线工具箱](https://itzhouq.cn/blog/web-tools-launch): 15 pure-frontend tools, zero uploads.
+- [每天 1000+ 条群消息，我让 AI 在本地帮我读](https://itzhouq.cn/blog/wechat-mcp-local-ai-digest): a local AI pipeline that digests WeChat group messages.
+- [AI 老写错表结构？3 个痛点逼出 archery-mcp](https://itzhouq.cn/blog/archery-mcp-open-source): why an open-source MCP server for database schemas was built.
+- [不买服务器的独立开发者：开一个「穷鬼套餐」系列，聊聊 Cloudflare 免费全家桶](https://itzhouq.cn/blog/cloudflare-free-series-01-map): series on running everything on Cloudflare's free tier.
+- [网速慢忍了半年，AI 帮我把网速提升 6700 倍](https://itzhouq.cn/blog/clash-auto-select-one-day): diagnosing and fixing a broken proxy auto-select with AI help.
+- [用数据说话：扫了 BOSS 上 120 个岗位，行情比想的残酷](https://itzhouq.cn/blog/shanghai-120-jobs): a 120-job scraping experiment comparing AI Agent vs Java salaries in Shanghai.
+- [X 商单平台注册完了，但我只有 4 个粉丝](https://itzhouq.cn/blog/tutti-day0-4-followers): day-one reality of starting an X account from zero followers.
+
+## Notes for agents
+- Canonical post URLs follow the /blog/<slug> pattern; the Chinese originals are authoritative.
+- This is a personal blog, not a company site. The author writes in first person and publishes income and failure data openly.
