@@ -44,8 +44,11 @@ export const site = {
   /** 首页"正在构建"路线图（build in public 展示） */
   roadmap: [
     { text: "个人博客网站（本站）", done: true },
-    { text: "每周一篇 build in public 记录", done: false },
     { text: "第一个挂载的小工具（AI Chat 游乐场）", done: true },
+    { text: "VoiceWove：AI 语音订阅站，5 天从 fork 到真实收款", done: true },
+    { text: "VoiceWove 30 天冲刺：100 个注册用户（进行中）", done: false },
+    { text: "vinciai 28 天实验重启：YouTube 缩略图场景拿到 1 笔真实付款", done: false },
+    { text: "每周一篇 build in public 记录", done: false },
   ],
   /** /tools 页面卡片：后续挂自己的小工具、商店入口 */
   tools: [
