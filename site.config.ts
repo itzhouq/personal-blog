@@ -41,17 +41,32 @@ export const site = {
     { href: "/dashboard", label: "数据" },
     { href: "/about", label: "关于" },
   ],
+  /** 首页顶部发布横幅（build in public 最新产品外链） */
+  launch: {
+    title: "VoiceWove",
+    tagline: "AI 语音订阅站：多角色故事配音 + 声音克隆，40+ 语言",
+    hook: "上个站 56 天零收入，这个站 5 天收到第一笔钱",
+    url: "https://voicewove.com",
+    postSlug: "voicewove-fork-to-live",
+  },
   /** 首页"正在构建"路线图（build in public 展示） */
   roadmap: [
     { text: "个人博客网站（本站）", done: true },
     { text: "第一个挂载的小工具（AI Chat 游乐场）", done: true },
     { text: "VoiceWove：AI 语音订阅站，5 天从 fork 到真实收款", done: true },
+    { text: "MarkdFlow：文档转 Markdown 订阅站，6 个 SEO 页全收录", done: true },
     { text: "VoiceWove 30 天冲刺：100 个注册用户（进行中）", done: false },
     { text: "vinciai 28 天实验重启：YouTube 缩略图场景拿到 1 笔真实付款", done: false },
     { text: "每周一篇 build in public 记录", done: false },
   ],
   /** /tools 页面卡片：后续挂自己的小工具、商店入口 */
   tools: [
+    {
+      title: "MarkdFlow",
+      desc: "PDF / 扫描件 / Office 转 Markdown 订阅站：每块带置信度评分、按页计费、开发者 API——给 RAG 喂干净语料",
+      href: "https://markdflow.org",
+      badge: "可用",
+    },
     {
       title: "在线工具箱",
       desc: "14 个纯前端小工具：图片压缩/裁剪/水印、GIF 合成、违禁词检测、JWT 解析……全部在浏览器本地运行，数据不上传",

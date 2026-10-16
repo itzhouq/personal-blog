@@ -82,6 +82,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 最新发布横幅（build in public 外链位） */}
+      <section className="mt-10 overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-br from-[var(--card)] via-[var(--card)] to-teal-500/10">
+        <a
+          href={site.launch.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block p-6 transition-colors hover:bg-teal-500/5"
+        >
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="rounded-full bg-teal-500 px-2.5 py-0.5 text-xs font-bold text-white">
+                  🚀 刚刚上线
+                </span>
+                <span className="text-lg font-bold">{site.launch.title}</span>
+                <span className="hidden text-sm text-[var(--muted)] sm:inline">
+                  {site.launch.tagline}
+                </span>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+                {site.launch.hook}
+              </p>
+            </div>
+            <span className="inline-flex flex-shrink-0 items-center gap-1.5 self-start rounded-lg bg-teal-500 px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 sm:self-center">
+              立即体验 ↗
+            </span>
+          </div>
+        </a>
+        <div className="border-t border-[var(--border)] px-6 py-3 text-sm">
+          <Link
+            href={`/blog/${site.launch.postSlug}`}
+            className="text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+          >
+            📖 读上线复盘：5 天从 fork 到真实收款 →
+          </Link>
+        </div>
+      </section>
+
       {/* Build in Public 路线图 */}
       <section className="mt-14 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6">
         <div className="flex items-center justify-between">
