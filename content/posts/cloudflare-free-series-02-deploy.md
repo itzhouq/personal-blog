@@ -67,7 +67,7 @@ npx wrangler pages deploy <输出目录>       # 把产物传上去，完事
 
 这不是纸上教程。写这篇文章的时候，我刚用这条命令部署了我自己的博客（Next.js 静态导出，342 个文件的真实项目），完整输出如下：
 
-![实测：wrangler pages deploy 真实输出，303 个文件 4.57 秒传完](/images/cloudflare-free-series-02/wrangler-deploy.png)
+![实测：wrangler pages deploy 真实输出，303 个文件 4.57 秒传完](https://pic.itzhouq.cn/cfs02-20261020-wrangler-deploy.png)
 
 303 个新文件上传 + 全球边缘网络部署，一共 4.57 秒。没有服务器，没有 nginx，没有证书，没有备案——因为 `.pages.dev` 本身就是 HTTPS。
 
@@ -77,7 +77,7 @@ npx wrangler pages deploy <输出目录>       # 把产物传上去，完事
 npx wrangler pages project list
 ```
 
-![实测：wrangler pages project list 输出，Git Provider 列可见两种项目的区别](/images/cloudflare-free-series-02/project-list.png)
+![实测：wrangler pages project list 输出，Git Provider 列可见两种项目的区别](https://pic.itzhouq.cn/cfs02-20261020-project-list.png)
 
 看这张真实输出的 **Git Provider** 列：`Yes` 的是 Git 集成项目（我的游戏攻略站们），`No` 的是直传项目（博客和工具箱）。我自己的用法就是按前面说的原则分的：要长期更新的走 Git，工具和实验品走 wrangler。
 
