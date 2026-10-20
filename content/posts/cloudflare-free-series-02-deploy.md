@@ -34,7 +34,7 @@ Pages 上线一个静态站，只有两条路：
 
 这是最省心的路，适合所有正经项目。全程在网页上完成：
 
-1. 打开 Cloudflare 控制台 → **Workers & Pages** → **Create** → 选 **Pages** 标签 → **Connect to Git**；
+1. 打开 Cloudflare 控制台 → **Workers & Pages** → **Create**，选 **Continue with GitHub**（旧版入口走页面底部的「继续前往 Pages」）；
 2. 授权 GitHub 或 GitLab，选中你的仓库（私有仓也支持）；
 3. 配置构建参数（下面细说）；
 4. 点 **Save and Deploy**，看它当场装依赖、跑构建；
@@ -46,9 +46,9 @@ Pages 上线一个静态站，只有两条路：
 - **Build command（构建命令）**：你的框架怎么打包就填什么，比如 Next.js 静态导出是 `npx @cloudflare/next-on-pages`，纯静态页留空。
 - **Build output directory（输出目录）**：构建产物在哪个文件夹，比如 `out`、`dist`、`public`。**这个字段配错是新手报错第一名**——提示找不到输出目录，八成是路径写错了。
 
-> 📷 截图占位：`git-integration-connect.png` —— Cloudflare 控制台 Workers & Pages → Create → Pages → Connect to Git 的仓库选择界面
->
-> 📷 截图占位：`git-integration-build-config.png` —— 构建配置页（Framework preset / Build command / Build output directory 三个字段）
+![实测截图：Cloudflare 控制台创建应用界面，Continue with GitHub 即 Git 集成入口，Upload your static files 即直传入口](/images/cloudflare-free-series-02/git-integration-connect.png)
+
+这张图正好把两条路的入口拍在了一起：**Continue with GitHub** 是 Git 集成，**Upload your static files** 是直传（拖拽）。值得注意的是界面底部那句"需要使用旧版 Pages 工作流？"——新版控制台正在把入口往 Workers 收，再次印证上一节说的演进方向。
 
 两个进阶配置记一下：
 
