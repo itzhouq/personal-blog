@@ -2,7 +2,7 @@
 title: 穷鬼套餐 02：303 个文件，4.6 秒 0 元上线
 date: 2026-10-20
 tags: [独立开发, Cloudflare, 部署, 穷鬼套餐, AI]
-draft: true
+draft: false
 summary: 写完的东西往哪放？Cloudflare Pages 两条部署路：Git 连接和 wrangler 直传。创建项目前就要选对，因为官方明说了不能互转。这篇用我自己博客的真实部署数据，把两条路一次讲透，附免费额度账本和踩坑清单。
 x_hooks: [穷鬼套餐 02：两条路把静态站送上全球 CDN，一分钱不花]
 ---
