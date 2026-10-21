@@ -106,7 +106,11 @@ JSON 接口通了，代理把 example.com 的页面原样带了回来，CORS 头
 
 ![实测：wrangler dev 的请求日志](https://pic.itzhouq.cn/cfs03-20261021-dev-log.png)
 
-**今天刚踩的坑，写给你**：`compatibility_date` 不能超过你本地 wrangler 支持的日期。我配置里写了 `2026-10-20`，`wrangler dev` 直接拒绝启动——报错说本地运行时二进制最高只支持 `2026-10-08`。这个字段的含义是"我的代码按哪一天的平台行为来跑"，写当前日期是官方推荐，但本地工具链没跟上就会起不来。解法：降到本地支持的日期，或升级 wrangler。
+**今天刚踩的坑，写给你**：`compatibility_date` 不能超过你本地 wrangler 支持的日期。我配置里写了 `2026-10-20`，`wrangler dev` 直接拒绝启动——报错说本地运行时二进制最高只支持 `2026-10-08`：
+
+![实测：compatibility_date 超前时 wrangler dev 的真实报错](https://pic.itzhouq.cn/cfs03-20261021-compat-error.png)
+
+这个字段的含义是"我的代码按哪一天的平台行为来跑"，写当前日期是官方推荐，但本地工具链没跟上就会起不来。解法：降到本地支持的日期，或升级 wrangler。
 
 ## 定时任务：本地怎么测
 
