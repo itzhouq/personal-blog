@@ -111,7 +111,7 @@ npx wrangler dev
 curl http://localhost:8788/api/count
 ```
 
-返回：`{"site":"web-tools","today":128,"note":"demo"}`。20 毫秒。任何网页、任何小程序、任何脚本都能请求这个地址拿到全站数据——这就是"一个 API"的全部。（计数现在是写死的 demo 值，怎么真正存起来是本系列数据篇的主题。）
+返回：`{"site":"web-tools","today":128,"note":"demo"}`。20 毫秒。任何网页、任何小程序、任何脚本都能请求这个地址拿到全站数据——这就是"一个 API"的全部。（这个 128 是写死的演示值；真版本怎么把数字存下来？文末有答案——**工具箱的真计数器已经上线了**。）
 
 ### 2. CORS 代理——那个"中间人"
 
@@ -157,13 +157,27 @@ npx wrangler deploy
 
 回看这个流程：建两个文件 → `wrangler dev` 本地跑 → `wrangler deploy` 上线。没有 Git 集成、没有构建配置、没有服务器。对比一下[上一篇](https://itzhouq.cn/blog/cloudflare-free-series-02-deploy)里 Pages 的部署，Workers 更轻——因为整个后端就是那一个文件。
 
+## 彩蛋：这篇写完，计数器已经真的上线了
+
+教学版里计数是写死的，但我没打算让它停在 demo。写完这篇的当天，我把 32 行骨架变成了真产品，接进了[工具箱](https://tools.itzhouq.cn)：
+
+- 加了一个 **KV 存储绑定**（Cloudflare 的键值数据库，免费额度足够），把每次使用次数真正存下来；
+- 两个接口：`POST /api/hit` 记一次使用，`GET /api/stats` 查全站统计；
+- 前端改动：打开任意工具页自动 +1，首页每张工具卡右上角显示全站累计的"已使用 N 次"。
+
+Worker 部署在 [web-tools-counter.itzhouq.workers.dev](https://web-tools-counter.itzhouq.workers.dev)，线上实测：
+
+![实测：线上真实计数器的 hit 与 stats 返回](https://pic.itzhouq.cn/cfs03-20261021-live-counter.png)
+
+从"文章里的 32 行"到"网站上的真功能"，中间只隔了：一个 KV 绑定、两段各十几行的代码、一次 `wrangler deploy`。这就是这套免费架构最舒服的地方——**教学的终点和生产的起点是同一份代码**。
+
 ## 写在最后
 
 回到开头的三件事：
 
 - CORS 代理——今天这篇已经完整实现；
 - 定时抓热词——骨架已就位，换掉心跳里的逻辑就是 macopenclaw 新词雷达的后端；
-- 全站计数——接口有了，还差"数据存哪"，这是这个系列接下来要讲的话题。
+- 全站计数——**已经真的上线了**，就是上面那个彩蛋。
 
 服务器时代做后端，一半时间写代码，一半时间伺候机器。Workers 把后一半砍成了零：32 行代码、两个文件、本地一跑、一键上线。每天 10 万次请求的免费额度，足够你的 side project 火到成为烦恼之前，一分钱都不用花。
 
