@@ -2,7 +2,7 @@
 title: 穷鬼套餐 03：32 行代码，10 万次调用，0 元
 date: 2026-10-21
 tags: [独立开发, Cloudflare, Workers, 穷鬼套餐, AI]
-draft: true
+draft: false
 summary: 网站上线后你会遇到三件事：前端调第三方接口被 CORS 拦、想要个全站计数、想每天自动抓点数据。这篇用一个 32 行的 Cloudflare Worker 把三件事一次解决——从建文件夹到本地实测，每一步都有真实输出。
 x_hooks: [穷鬼套餐 03：不用买服务器，你的第一个 API 今天就能上线]
 ---
@@ -170,6 +170,10 @@ Worker 部署在 [web-tools-counter.itzhouq.workers.dev](https://web-tools-count
 ![实测：线上真实计数器的 hit 与 stats 返回](https://pic.itzhouq.cn/cfs03-20261021-live-counter.png)
 
 从"文章里的 32 行"到"网站上的真功能"，中间只隔了：一个 KV 绑定、两段各十几行的代码、一次 `wrangler deploy`。这就是这套免费架构最舒服的地方——**教学的终点和生产的起点是同一份代码**。
+
+工具页右上角现在长这样（就是截图里红框那个小徽章）：
+
+![实测：公众号封面工具页右上角的"已被使用 4 次"徽章](https://pic.itzhouq.cn/cfs03-20261022-usage-badge.png)
 
 ## 写在最后
 
