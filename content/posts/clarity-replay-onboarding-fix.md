@@ -1,7 +1,7 @@
 ---
 title: 上线 10 天，第一个用户注册后什么都没做
 date: 2026-10-26
-draft: true
+draft: false
 tags: [独立开发, BuildInPublic, 订阅站, Onboarding, Clarity]
 summary: 第一个真实用户注册了——然后什么都没做。没有合成过一次音频，没有点过任何工具。我在 Clarity 会话回放里看着他注册、迷路、点生成、撞上报错、离开。这篇文章讲我从中挖出的两个在生产环境藏了 15 天的 bug，以及为什么「录屏比猜测值钱」。
 x_hooks: ["验证邮件从没发出去过：两个 bug 在生产环境藏了 15 天", "注册到流失只隔一个报错：Clarity 回放救了我们的 onboarding"]
