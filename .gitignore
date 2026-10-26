@@ -20,3 +20,11 @@ next-env.d.ts
 
 # 本地设计源文件（含授权字体，不进公开仓库）
 /assets/
+
+# 构建产物与本地运营数据（脚本生成/不入仓）
+/public/og
+/public/ads.txt
+/.kit-stage
+/workers/wechat-mp/assets
+/seo-reports
+/.gsc-rounds

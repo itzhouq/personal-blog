@@ -28,6 +28,18 @@ export default function ToolsPage() {
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{t.desc}</p>
             </>
           );
+          // 有 slug 的工具优先走站内落地页（含功能清单与教程入口）
+          if (t.slug) {
+            return (
+              <Link
+                key={t.title}
+                href={`/tools/${t.slug}`}
+                className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6 transition-all hover:border-[var(--accent)] hover:shadow-sm"
+              >
+                {inner}
+              </Link>
+            );
+          }
           return t.href.startsWith("/") ? (
             <Link
               key={t.title}

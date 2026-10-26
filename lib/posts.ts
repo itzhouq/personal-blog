@@ -13,6 +13,9 @@ type Frontmatter = {
   tags?: unknown;
   summary?: unknown;
   draft?: unknown;
+  column?: unknown;
+  series?: unknown;
+  seriesOrder?: unknown;
 };
 
 function readPost(slug: string): Post | null {
@@ -35,6 +38,9 @@ function readPost(slug: string): Post | null {
     tags: Array.isArray(m.tags) ? m.tags.filter((t): t is string => typeof t === "string") : [],
     summary: typeof m.summary === "string" ? m.summary : "",
     draft: m.draft === true,
+    column: typeof m.column === "string" && m.column ? m.column : undefined,
+    series: typeof m.series === "string" && m.series ? m.series : undefined,
+    seriesOrder: typeof m.seriesOrder === "number" ? m.seriesOrder : undefined,
     readingTime: readingTime(content),
     content,
     html: renderMarkdown(content),
@@ -57,8 +63,8 @@ export function getAllPosts(): Post[] {
 }
 
 export function toMeta(p: Post): PostMeta {
-  const { slug, title, date, tags, summary, draft, readingTime } = p;
-  return { slug, title, date, tags, summary, draft, readingTime };
+  const { slug, title, date, tags, summary, draft, readingTime, column, series, seriesOrder } = p;
+  return { slug, title, date, tags, summary, draft, readingTime, column, series, seriesOrder };
 }
 
 export function getPostBySlug(slug: string): Post | null {
@@ -91,4 +97,16 @@ export function getAllTags(): TagCount[] {
 
 export function getPostsByTag(tag: string): Post[] {
   return getAllPosts().filter((p) => p.tags.includes(tag));
+}
+
+/** 按栏目取文章（日期倒序） */
+export function getPostsByColumn(column: string): Post[] {
+  return getAllPosts().filter((p) => p.column === column);
+}
+
+/** 按系列取文章，按 seriesOrder 升序；未写 seriesOrder 的按日期兜底 */
+export function getPostsBySeries(series: string): Post[] {
+  return getAllPosts()
+    .filter((p) => p.series === series)
+    .sort((a, b) => (a.seriesOrder ?? 999) - (b.seriesOrder ?? 999) || (a.date < b.date ? -1 : 1));
 }

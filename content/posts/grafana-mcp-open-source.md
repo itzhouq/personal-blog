@@ -4,6 +4,7 @@ date: 2026-10-07
 tags: [MCP, AI, Grafana, 可观测性, 开源]
 summary: AI 写代码很顺，但排查线上问题时它对日志、指标、链路一无所知——把 Grafana 上下文嵌进编码工作流的 MCP server 做好了，今天开源。聊聊双环境设计、那个"非交互 shell 读不到 .zshrc"的坑，以及 npm 首发 + MCP Registry 收录的完整流程。
 draft: true
+column: opensource
 ---
 
 上一篇[《让 AI 只读"看见"生产库》](/blog/archery-mcp-open-source)讲的是让 AI 看见**数据**（表结构、索引、数据特征）。这篇补上另一半：让 AI 看见**运行时**——日志、指标、链路追踪。

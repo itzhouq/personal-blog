@@ -3,6 +3,7 @@ title: AI 老写错表结构？3 个痛点逼出 archery-mcp
 date: 2026-10-07
 tags: [MCP, AI, 数据库, 开源]
 summary: test 和 prod 表结构不一致、上线脚本靠人工比对、数据清洗摸不到生产数据特征——为这三个痛点我做了一个 Archery 的 MCP Server，现在开源了。聊聊方案取舍、设计决策和这次开源脱敏的教训。
+column: opensource
 ---
 
 [archery-mcp](https://github.com/itzhouq/archery-mcp) 是这段时间用得最顺手的自研工具，前几天刚开源。这篇是复盘：为什么做、怎么设计的、开源前做了什么。

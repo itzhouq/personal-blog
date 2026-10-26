@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { site } from "@/site.config";
 import Header from "@/components/Header";
@@ -36,6 +37,15 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
       <body className="flex min-h-dvh flex-col antialiased">
+        {/* AdSense 加载器：site.adsense.clientId 填了才渲染（见 docs/adsense-setup.md） */}
+        {site.adsense.clientId && (
+          <Script
+            async
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsense.clientId}`}
+          />
+        )}
         <Analytics />
         <Header />
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">{children}</main>

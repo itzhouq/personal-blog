@@ -3,6 +3,7 @@ title: 为什么我决定 Build in Public
 date: 2026-10-06
 tags: [随笔, Build in Public]
 summary: 从今天起，把做过的事、踩过的坑、赚到的每一分钱都公开记录。这是第一篇。
+column: practice
 ---
 
 想了很久，决定把"做东西"这件事本身公开出来。这就是 Build in Public——边做边说，把过程当产品。

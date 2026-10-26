@@ -3,6 +3,7 @@ title: 看收益这件事，我从工作清单里删掉了
 date: 2026-10-11
 tags: [Adsterra, API, 自动化, Build in Public]
 summary: 挂广告靠 Agent 开浏览器取码，看收益靠手动记账——两件重复劳动，一个烧 token 一个靠忘性。这篇复盘我怎么把 Adsterra 改成 API 优先、浏览器只留三件事，再把收益公开接成每周一自动回填的管道。
+column: practice
 ---
 
 [Build in Public 的第一篇](/blog/hello-build-in-public)立了个 flag：赚没赚到钱全部公开。这周把这条公开链路里最人工的两环改成了全自动。这篇是复盘：为什么做、怎么取舍、现在账是怎么算的。

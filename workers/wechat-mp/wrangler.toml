@@ -1,0 +1,17 @@
+name = "wechat-mp"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+# 自定义域名（itzhouq.cn 的 zone 在同账号下）；workers.dev 在国内不可达，公众号服务器配置必须走自有域名
+routes = [{ pattern = "mp.itzhouq.cn", custom_domain = true }]
+
+# kit.zip 放这里（scripts/build-lead-package.mjs 生成）；assets 优先于 worker 服务
+[assets]
+directory = "./assets"
+
+[vars]
+# 回复文案里的下载地址前缀
+MP_PUBLIC_BASE = "https://mp.itzhouq.cn"
+
+# MP_TOKEN（与公众号后台「服务器配置」一致的字符串）走 secret，不入仓：
+#   echo "你的Token" | npx wrangler secret put MP_TOKEN -c workers/wechat-mp/wrangler.toml

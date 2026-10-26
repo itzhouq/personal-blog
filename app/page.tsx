@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { site } from "@/site.config";
-import { getAllPosts, toMeta } from "@/lib/posts";
+import { getAllPosts, getPostsByColumn, toMeta } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 
 export const metadata: Metadata = {
@@ -152,6 +152,34 @@ export default function Home() {
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {latest.map((p) => (
             <PostCard key={p.slug} post={p} />
+          ))}
+        </div>
+      </section>
+
+      {/* 内容栏目 */}
+      <section className="mt-14">
+        <div className="flex items-end justify-between">
+          <h2 className="text-xl font-bold">内容栏目</h2>
+          <Link
+            href="/columns"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+          >
+            全部栏目 →
+          </Link>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {site.columns.map((c) => (
+            <Link
+              key={c.key}
+              href={`/columns/${c.key}`}
+              className="group rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 transition-all hover:border-[var(--accent)] hover:shadow-sm"
+            >
+              <div className="flex items-center justify-between">
+                <p className="font-medium transition-colors group-hover:text-[var(--accent)]">{c.name}</p>
+                <span className="text-xs text-[var(--muted)]">{getPostsByColumn(c.key).length} 篇</span>
+              </div>
+              <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">{c.description}</p>
+            </Link>
           ))}
         </div>
       </section>
