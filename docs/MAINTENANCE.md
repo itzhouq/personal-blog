@@ -17,7 +17,9 @@
 
 1. **选题**：热词池/系列排期/待转正草稿三选一（排期表为准），先确认有搜索量再动笔
 2. **写作**：frontmatter 必填 `title / date / tags / summary`，加 `column`（四栏目之一）；
-   属于连载的加 `series: cf-free` + `seriesOrder: <n>`
+   属于连载的加 `series: cf-free` + `seriesOrder: <n>`。
+   **签名分工**：手写结尾只写人设与复盘，不写动作指令——资料领取 = WechatLead 卡片（回复「出海」）、
+   关注/加微 = AuthorCard（全站自动注入，改话术只改组件一处）；站内绝不直发下载链接
 3. **内链纪律**：只链已发布文章（**draft 禁链**）；新文至少链 2 篇旧文
 4. **构建验证**：`npm run build`（prebuild 自动生成 OG 图和 ads.txt）
 5. **部署**：`npm run deploy`（= build + wrangler pages deploy）

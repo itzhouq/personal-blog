@@ -52,6 +52,15 @@ export default function AuthorCard() {
           </Link>
         </li>
         <li>
+          <span className="text-[var(--muted)]">免费资料：</span>
+          <Link href="/wechat" className="font-medium text-[var(--accent)] hover:underline">
+            公众号回复「{site.leadMagnet.keyword}」
+          </Link>
+          <span className="text-[var(--muted)]">
+            领取{site.leadMagnet.packageName}（自动化 skill + 自查清单）
+          </span>
+        </li>
+        <li>
           <span className="text-[var(--muted)]">不错过更新：</span>
           <Link href="/rss.xml" className="font-medium text-[var(--accent)] hover:underline">
             RSS 全文订阅

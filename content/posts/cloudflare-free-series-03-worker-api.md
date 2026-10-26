@@ -202,4 +202,4 @@ Worker 部署在 [web-tools-counter.itzhouq.workers.dev](https://web-tools-count
 
 我是 **搞副业的老周 itzhouq**：10 年后端程序员，湖北农村自学编程转行，人在上海——白天写代码，晚上带娃，剩下的时间用 AI Agent 折腾副业。做的东西、流量数据、赚没赚到钱，全部公开，失败了也发。
 
-这是穷鬼套餐系列第三篇（Workers API），后续实操全部在我博客 itzhouq.cn 与公众号同步连载。想交流 AI 搞副业、白嫖部署——**关注公众号「搞副业的老周itzhouq」，回复「微信」加我**，第一时间同步新文章和翻车现场。
+这是穷鬼套餐系列第三篇（Workers API），后续实操全部在我博客 itzhouq.cn 与公众号同步连载。想交流 AI 搞副业、白嫖部署——新文章和翻车现场都第一时间同步在公众号「搞副业的老周itzhouq」。
