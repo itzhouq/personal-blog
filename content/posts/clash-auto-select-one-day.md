@@ -5,6 +5,7 @@ draft: false
 tags: [Clash, 网络诊断, AI Agent, BuildInPublic]
 x_hooks: ["跟着 AI 查网速，我把 GitHub 从打不开修到 2 秒下完", "测了三次网速，最慢的一次是我自己测的"]
 summary: 公司网速慢，我忍了半年，老习惯是手动测速挑节点。这次让 AI Agent 彻底查了一遍：先定位问题边界，再抓出 Clash 里三个潜伏的坑。国际下载从 93 B/s 的断流状态修到 5 Mbps（6700 倍），GitHub 从打不开变成 2 秒下完 11MB。完整实操经验，全在这篇。
+column: practice
 ---
 
 最近老觉得网慢。具体是一种很拧巴的慢：挂着代理还行，一关掉就难受——GitHub 打不开、Cloudflare 页面转圈、npm 装包要泡茶等。

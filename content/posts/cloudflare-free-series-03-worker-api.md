@@ -5,6 +5,9 @@ tags: [独立开发, Cloudflare, Workers, 穷鬼套餐, AI]
 draft: false
 summary: 网站上线后你会遇到三件事：前端调第三方接口被 CORS 拦、想要个全站计数、想每天自动抓点数据。这篇用一个 32 行的 Cloudflare Worker 把三件事一次解决——从建文件夹到本地实测，每一步都有真实输出。
 x_hooks: [穷鬼套餐 03：不用买服务器，你的第一个 API 今天就能上线]
+column: infra
+series: cf-free
+seriesOrder: 3
 ---
 
 [上一篇](https://itzhouq.cn/blog/cloudflare-free-series-02-deploy)我们把静态站送上了全球 CDN。但网站跑起来之后，你迟早会遇到这三件事——都是我自己真实遇到过的：

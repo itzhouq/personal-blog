@@ -5,6 +5,7 @@ draft: false
 tags: [独立开发, BuildInPublic, 订阅站, Onboarding, Clarity]
 summary: 第一个真实用户注册了——然后什么都没做。没有合成过一次音频，没有点过任何工具。我在 Clarity 会话回放里看着他注册、迷路、点生成、撞上报错、离开。这篇文章讲我从中挖出的两个在生产环境藏了 15 天的 bug，以及为什么「录屏比猜测值钱」。
 x_hooks: ["验证邮件从没发出去过：两个 bug 在生产环境藏了 15 天", "注册到流失只隔一个报错：Clarity 回放救了我们的 onboarding"]
+column: practice
 ---
 
 10 月 25 号晚上 6 点，我的手机弹了一条飞书通知：

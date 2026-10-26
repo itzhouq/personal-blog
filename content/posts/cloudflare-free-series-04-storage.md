@@ -5,6 +5,9 @@ tags: [独立开发, Cloudflare, 数据存储, 穷鬼套餐, AI]
 draft: false
 summary: 静态站和 API 都上线了，数据存哪？KV、D1、R2 三个免费存储一次讲透：一张决策表 + 6 个实测配额陷阱，包括 wrangler 默认写本地这种官方不强调的坑。我的计数器和图床全跑在 0 元架构上。
 x_hooks: [穷鬼套餐 04：三个免费存储，6 个配额陷阱, 穷鬼套餐 04：D1 免费单库只有 500MB]
+column: infra
+series: cf-free
+seriesOrder: 4
 ---
 
 [上一篇文章](https://itzhouq.cn/blog/cloudflare-free-series-03-worker-api)之后，你的站能看、能算、能每天定时抓数据。但真要把玩具变成产品，迟早撞上同一个问题：**数据存哪？**
