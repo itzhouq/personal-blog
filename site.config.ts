@@ -111,6 +111,12 @@ export const site = {
       ],
     },
     {
+      title: "置业账本",
+      desc: "江浙沪买房决策工作台：官方核验的房价指数与政策追踪、租买现金流测算、关注楼盘本地跟踪与持有成本分析——隐私数据只存自己浏览器，不上传",
+      href: "https://housing.itzhouq.cn",
+      badge: "可用",
+    },
+    {
       slug: "archery-mcp",
       title: "Archery MCP",
       desc: "开源的 Archery MCP Server：让 AI 编码助手只读接入生产库查表结构、检查上线 SQL，嵌入日常开发工作流",
